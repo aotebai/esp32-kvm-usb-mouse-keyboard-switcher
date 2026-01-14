@@ -112,8 +112,9 @@ For detailed address description and parameter verification: firmware/precompile
  - 2D Drawings: cad_drawing/ (DWG + DXF formats, which can be used for processing or size modification)
 
 3D Case Rendering:
-![3D Case Rendering](/docs/59screenshots/case_render.png)
-![3D physical image](/docs/59screenshots/3D_print.jpg)
+![3D Case Rendering](/docs/screenshots/case_render.png)
+
+![3D physical image](/docs/screenshots/3D_print.jpg)
 ### 🔨 Build from Source (For Developers)
 
 1. Install ESP-IDF v5.5.1 (strictly correspond to the version to avoid compatibility issues)
