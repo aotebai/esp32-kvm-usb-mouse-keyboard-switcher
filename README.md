@@ -244,7 +244,7 @@ For detailed address description and parameter verification: firmware/precompile
 idf.py set-target esp32s3
 idf.py build
 idf.py -p /dev/ttyUSB0 flash monitor
-'''
+```
 ### ❓ Frequently Asked Questions (FAQ)
 Q1: Flashing failed / COM port not recognized
 A: Install the corresponding USB driver for ESP32-S3; replace with a high-quality USB cable (avoid data cables that only charge without transmitting data); replace the USB port of the computer; ensure the development board enters download mode (operate according to the corresponding key combination).
