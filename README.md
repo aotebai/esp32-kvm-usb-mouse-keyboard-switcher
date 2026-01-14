@@ -114,7 +114,7 @@
 
 ### 🔨 从源码编译（开发者专用）
 1. 安装 ESP-IDF v5.5.1 版本（严格对应版本，避免兼容性问题）
-2. 克隆本仓库至本地：`git clone https://github.com/你的GitHub用户名/esp32s3-kvm-switch.git`
+2. 克隆本仓库至本地：`git clone https://github.com/aotebai/esp32-kvm-usb-mouse-keyboard-switcher.git`
 3. 进入项目目录，执行以下命令编译、烧录：
 ```bash
 idf.py set-target esp32s3
@@ -243,7 +243,7 @@ For detailed address description and parameter verification: firmware/precompile
 ### 🔨 Build from Source (For Developers)
 
 1. Install ESP-IDF v5.5.1 (strictly correspond to the version to avoid compatibility issues)
-2. clone repositoryto locate:    `git clone https://github.com/你的GitHub用户名/esp32s3-kvm-switch.git`
+2. clone repositoryto locate:    `git clone https://github.com/aotebai/esp32-kvm-usb-mouse-keyboard-switcher.git`
 3. Enter the project directory and execute the following commands to compile and flash:
 ```bash
 idf.py set-target esp32s3
@@ -252,15 +252,25 @@ idf.py -p /dev/ttyUSB0 flash monitor
 ```
 ### ❓ Frequently Asked Questions (FAQ)
 Q1: Flashing failed / COM port not recognized
+
 A: Install the corresponding USB driver for ESP32-S3; replace with a high-quality USB cable (avoid data cables that only charge without transmitting data); replace the USB port of the computer; ensure the development board enters download mode (operate according to the corresponding key combination).
+
 Q2: No response after assembly, LED not on
+
 A: Check the wiring (especially the power supply line and UART connection, avoid reversing pins); verify that the firmware flashing address is correct; ensure the CH9350 module receives stable 5V power supply and the ESP32-S3 power supply voltage is normal; check if the diode is reversed.
+
 Q3: Switching function is normal, but the keyboard and mouse are not recognized by the computer
+
 A: Confirm that the target computer recognizes the ESP32-S3 as a USB HID device (can be viewed in Device Manager); replace the USB port or USB cable of the computer; update to the latest version of the project firmware, and check whether the communication between the CH9350 module and ESP32-S3 is normal.
+
 Q4: Abnormal LED light effects (flicker, wrong color)
+
 A: Check whether the LED wiring is firm and the pins are corresponding correctly; confirm that the LED control logic in the firmware is consistent with the hardware wiring; try replacing the faulty LED.
+
 Q5: The system cannot work when a single computer is powered on
+
 A: Check if the diode wiring direction is correct (anode connected to host 5V, cathode connected to system bus); confirm that the diode model is 1N5819 (to ensure low forward conduction voltage); check if there is poor contact in the power supply line.
+
 ### 📺 Demo Video
 Bilibili Demo Link (Replace with your actual video link)
 ### 📄 Open Source License
