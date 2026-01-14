@@ -73,15 +73,18 @@ A dual-device KVM switch based on ESP32-S3 and CH9350 modules, which enables sea
        U0TX (GPIO11) ------------> RXD
        U0RX (GPIO10) <------------ TXD
        
-       U2TX (GPIO43) ------------> RXD  [Host B]
+       [ESP32S3]                  [Host B]
+       U2TX (GPIO43) ------------> RXD  
        U2RX (GPIO44) <------------ TXD
        
-       U1TX (GPIO17) ------------> TXD  [Slave C]
+       [ESP32S3]                  [Slave C]
+       U1TX (GPIO17) ------------> TXD  
        U1RX (GPIO18) <------------ RXD
        
-       GPIO12 (K1) <-------------- Microswitch (GND)
-       GPIO13 (K2) <-------------- Microswitch (GND)
-       GPIO14 (K3) <-------------- Microswitch (GND)
+       [ESP32S3]                  [Microswitch]
+       GPIO12 -------------------->(K1) 
+       GPIO13 -------------------->(K2) 
+       GPIO14 -------------------->(K3) 
 
 ### 🚀 One-Click Flashing (No ESP-IDF Required)
 #### For Windows Users
