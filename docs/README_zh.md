@@ -61,7 +61,9 @@
                   |                      |
             [ESP32S3]                [下位机 C]
             5V (Vin)                 5V_IN
-            GND -------------------- GND
+            
+       [ESP32S3]   [上位机 A]   [上位机 B]   [下位机 C]   [微动开关]
+          GND ------ GND ------- GND ------- GND ------ GND
 
     两个二极管正极分别接上位机 A、上位机 B 的 5V 引脚，负极汇接到系统 5V 总线
     系统 5V 总线为 ESP32S3 和下位机 C 供电，确保单台计算机开机时系统仍能正常运行
@@ -93,7 +95,10 @@
 
 ### 🚀 一键烧录（无需 ESP-IDF）
 #### 适用于 Windows 用户
-1. 下载 [乐鑫 ESP Flash Download Tool](https://docs.espressif.com/projects/esp-test-tools/zh_CN/latest/esp32/production_stage/tools/flash_download_tool.html)（选择对应系统版本，建议下载最新版）
+1. 下载乐鑫 ESP Flash Download Tool（选择对应系统版本，建议下载最新版）：
+   - 🔗 [官方下载地址](https://docs.espressif.com/projects/esp-test-tools/zh_CN/latest/esp32/production_stage/tools/flash_download_tool.html)
+   - 📦 [本地镜像（flash_download_tool.zip）](../firmware/tools/flash_download_tool.zip)（国内用户快速下载，与官方最新版一致）
+
 2. 将 ESP32-S3 开发板通过 USB 线连接电脑，选择对应的 COM 口（未识别请安装 ESP32-S3 专用 USB 驱动）
 3. 设置烧录参数：`80MHz` / `DIO` / `2MB`（严格对应固件配置，避免烧录失败）
 4. 添加固件文件并对应烧录地址：
@@ -116,11 +121,11 @@
 
 3D 外壳渲染图：
 
-![3D 外壳渲染图](./screenshots/case_render.png)
+![3D 外壳渲染图](screenshots/case_render.png)
 
 实物图：
 
-![实物图](./screenshots/3d_print.jpg)
+![实物图](screenshots/3d_print.jpg)
 
 ### 🔨 从源码编译（开发者专用）
 1. 安装 ESP-IDF v5.5.1 版本（严格对应版本，避免兼容性问题）

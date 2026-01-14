@@ -65,7 +65,9 @@ A dual-device KVM switch based on ESP32-S3 and CH9350 modules, which enables sea
                   |                      |
             [ESP32S3]                [Slave C]
             5V (Vin)                 5V_IN
-            GND -------------------- GND
+           
+       [ESP32S3]   [Host A]   [Host B]   [Slave C]   [Microswitch]
+          GND ------ GND ------- GND ------- GND ------ GND
             
 
 ##### 2. UART & Control Wiring
@@ -89,7 +91,9 @@ A dual-device KVM switch based on ESP32-S3 and CH9350 modules, which enables sea
 ### 🚀 One-Click Flashing (No ESP-IDF Required)
 #### For Windows Users
 
-1. Download  [ Espressif ESP Flash Download Tool ](https://docs.espressif.com/projects/esp-test-tools/zh_CN/latest/esp32/production_stage/tools/flash_download_tool.html) (select the corresponding system version, it is recommended to download the latest version)
+1. Download the Espressif ESP Flash Download Tool (recommended to get the latest version from the official website):
+   - 🔗 [Official ESP Flash Download Tool](https://docs.espressif.com/projects/esp-test-tools/en/latest/esp32/production_stage/tools/flash_download_tool.html)
+   - 📦 [Local Mirror (flash_download_tool.zip)](./firmware/tools/flash_download_tool.zip) (for faster access, same as official latest version)
 2. Connect the ESP32-S3 development board to the computer via a USB cable, and select the corresponding COM port (install the dedicated ESP32-S3 USB driver if it is not recognized)
 3. Set the flashing parameters: 80MHz / DIO / 2MB (strictly correspond to the firmware configuration to avoid flashing failure)
 4. Add firmware files and corresponding flashing addresses:
@@ -113,11 +117,11 @@ For detailed address description and parameter verification: firmware/precompile
 
 3D Case Rendering:
 
-![3D Case Rendering](./docs/screenshots/case_render.png)
+![3D Case Rendering](docs/screenshots/case_render.png)
 
 physical image:
 
-![physical image](./docs/screenshots/3d_print.jpg)
+![physical image](docs/screenshots/3d_print.jpg)
 ### 🔨 Build from Source (For Developers)
 
 1. Install ESP-IDF v5.5.1 (strictly correspond to the version to avoid compatibility issues)
