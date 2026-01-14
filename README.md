@@ -160,8 +160,8 @@ A dual-device KVM switch based on ESP32-S3 and CH9350 modules, which enables sea
 | CH9350 Module | [https://item.taobao.com/item.htm?id=695173316772](https://item.taobao.com/item.htm?id=695173316772) | 3 | 18.5 | 55.5 | 3 | 58.5 |
 | 3-position Microswitch (with K1/K2/K3 Buttons) | [https://item.taobao.com/item.htm?id=550176517768](https://item.taobao.com/item.htm?id=550176517768) | 1 | 3.88 | 3.88 | 0 | 3.88 |
 | USB OTG Cable (Male to Male) | [https://item.taobao.com/item.htm?id=550176517768](https://item.taobao.com/item.htm?id=550176517768) | 6 | 0.85 | 5.1 | 2 | 7.1 |
-| Through-hole Schottky Diode DO-41 (1N5819 1A 40V) | [https://detail.tmall.com/item.htm?id=781535844592](https://detail.tmall.com/item.htm?id=781535844592) | 20(使用2个) | 1.7 | 1.7 | 0 | 1.7 |
-| 304 Stainless Steel Pan Head Screw and Nut Set | [https://detail.tmall.com/item.htm?id=637072501037](https://detail.tmall.com/item.htm?id=637072501037) | 50(使用14个) | 4.7 | 4.7 | 0 | 4.7 |
+| Through-hole Schottky Diode DO-41 (1N5819 1A 40V) | [https://detail.tmall.com/item.htm?id=781535844592](https://detail.tmall.com/item.htm?id=781535844592) | 20(use2) | 1.7 | 1.7 | 0 | 1.7 |
+| 304 Stainless Steel Pan Head Screw and Nut Set | [https://detail.tmall.com/item.htm?id=637072501037](https://detail.tmall.com/item.htm?id=637072501037) | 50(use14) | 4.7 | 4.7 | 0 | 4.7 |
 | 3D Printed Case | [https://www.jlc-3dp.cn/fp/Amntaau/1](https://www.jlc-3dp.cn/fp/Amntaau/1) | 1 | 24.78 | 24.78 | 3.2 | 27.98 |
 
 ### 🔌 Wiring & Assembly
@@ -244,7 +244,7 @@ For detailed address description and parameter verification: firmware/precompile
 idf.py set-target esp32s3
 idf.py build
 idf.py -p /dev/ttyUSB0 flash monitor
-
+'''
 ### ❓ Frequently Asked Questions (FAQ)
 Q1: Flashing failed / COM port not recognized
 A: Install the corresponding USB driver for ESP32-S3; replace with a high-quality USB cable (avoid data cables that only charge without transmitting data); replace the USB port of the computer; ensure the development board enters download mode (operate according to the corresponding key combination).
