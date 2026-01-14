@@ -5,8 +5,8 @@
 - [📝 中文版本](./docs/README_zh.md)
 
 ---
-## english-version
-### Project Introduction
+## 🔤 english-version
+### 🚩Project Introduction
 A dual-device KVM switch based on ESP32-S3 and CH9350 modules, which enables seamless sharing of a single set of keyboard and mouse between two computers. Equipped with ESP32S3 on-board RGB-LED light effects to indicate the working status, no driver installation is required, and users without development experience can flash the precompiled firmware with one click. It supports dual-device power supply redundancy design to ensure stable system operation when a single device is powered on.
 ### ✨Key Features
 
@@ -27,7 +27,7 @@ A dual-device KVM switch based on ESP32-S3 and CH9350 modules, which enables sea
 | 3-position Microswitch (with K1/K2/K3 Buttons) | [3-position Microswitch Link](https://item.taobao.com/item.htm?id=550176517768) |     1 | 3.88 | 3.88 | 0 | 3.88 |
 | USB OTG Cable (Male to Male) | [USB OTG Cable Link](https://item.taobao.com/item.htm?id=550176517768) |     6 | 0.85 | 5.1 | 2 | 7.1 |
 | Through-hole Schottky Diode DO-41 (1N5819 1A 40V) | [Through-hole Schottky Link](https://detail.tmall.com/item.htm?id=781535844592) | 20(use2) | 1.7 | 1.7 | 0 | 1.7 |
-| 304 Stainless Steel Pan Head Screw and Nut Set | [Head Screw and Nut Set Link](https://detail.tmall.com/item.htm?id=637072501037) | 50(use14) | 4.7 | 4.7 | 0 | 4.7 |
+| 304 Stainless Steel Pan Head Screw and Nut Set(M2.5x8) | [Head Screw and Nut Set Link](https://detail.tmall.com/item.htm?id=637072501037) | 50(use14) | 4.7 | 4.7 | 0 | 4.7 |
 | 3D Printed Case | [3D Printed Case Link](https://www.jlc-3dp.cn/fp/Amntaau/1) |     1 | 24.78 | 24.78 | 3.2 | 27.98 |
 
 ### 🔌 Wiring & Assembly
