@@ -172,15 +172,23 @@ A dual-device KVM switch based on ESP32-S3 and CH9350 modules, which enables sea
 ### 🔌 Wiring & Assembly
 
 1.Connect the keyboard and mouse to the corresponding USB ports of the CH9350 module respectively
+
 2.Connect the CH9350 module UART port (Host A) to ESP32-S3: TXD→U0RX (GPIO10), RXD→U0TX (GPIO11), GND→GND, 5V→1N5819→5V (ensure stable power supply)
+
 3.Connect the CH9350 module UART port (Host B) to ESP32-S3: TXD→U2RX (GPIO44), RXD→U2TX (GPIO43), GND→GND, 5V→1N5819→5V (ensure stable power supply)
+
 4.Wire the 3-position microswitch: Connect the K1/K2/K3 buttons to the corresponding GPIO pins of the ESP32-S3 respectively
+
 5.Schottky diodes: The anodes of the two diodes are connected to the 5V pins of Host A and Host B respectively, and the cathodes are connected to the 5Vin of ESP32S3 and the 5V pin of Slave C (to ensure effective power supply when one computer is powered on and the entire system can run normally)
+
 6.Organize all components and assemble them into the 3D printed case, fix them firmly to avoid poor contact
 
 #### Wiring Diagrams
 ##### 1. Power Supply Wiring
- [Host A]                       [Host B]
+
+
+
+      [Host A]                       [Host B]
           |                               |
         5V_OUT                           5V_OUT
           |                               |
@@ -197,6 +205,7 @@ A dual-device KVM switch based on ESP32-S3 and CH9350 modules, which enables sea
             [ESP32S3]                [Slave C]
             5V (Vin)                 5V_IN
             GND -------------------- GND
+            
 
 ##### 2. UART & Control Wiring
        [ESP32S3]                  [Host A]
