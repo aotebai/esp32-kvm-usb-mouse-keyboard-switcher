@@ -139,7 +139,7 @@ B 站演示链接（替换为你的实际视频链接）
 Apache License 2.0（详见根目录 LICENSE 文件）
 
 ---
-## English Version
+## english-version
 ### Project Introduction
 A dual-device KVM switch based on ESP32-S3 and CH9350 modules, which enables seamless sharing of a single set of keyboard and mouse between two computers. Equipped with ESP32S3 on-board RGB-LED light effects to indicate the working status, no driver installation is required, and users without development experience can flash the precompiled firmware with one click. It supports dual-device power supply redundancy design to ensure stable system operation when a single device is powered on.
 ### ✨Key Features
