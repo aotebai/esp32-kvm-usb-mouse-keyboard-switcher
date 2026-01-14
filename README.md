@@ -120,7 +120,7 @@
 idf.py set-target esp32s3
 idf.py build
 idf.py -p /dev/ttyUSB0 flash monitor
-
+```
 
 ### ❓ 常见问题（FAQ）
 Q1：烧录失败 / 无法识别 COM 口
