@@ -122,7 +122,7 @@ idf.py build
 idf.py -p /dev/ttyUSB0 flash monitor
 
 
-###❓ 常见问题（FAQ）
+### ❓ 常见问题（FAQ）
 Q1：烧录失败 / 无法识别 COM 口
 A：安装 ESP32-S3 对应 USB 驱动；更换优质 USB 线（避免数据线仅充电不传输数据）；更换电脑 USB 端口；确保开发板进入下载模式（按对应按键组合操作）。
 Q2：组装后设备无响应、LED 不亮
@@ -133,19 +133,16 @@ Q4：LED 灯光特效异常（频闪、颜色错误）
 A：检查 LED 灯珠接线是否牢固、引脚对应正确；确认固件中 LED 控制逻辑与硬件接线一致；更换故障 LED 灯珠尝试。
 Q5：单台电脑开机时系统无法工作
 A：检查二极管接线方向是否正确（正极接上位机 5V，负极接系统总线）；确认二极管型号为 1N5819（确保正向导通压降低）；检查供电线路是否存在接触不良。
-###📺 演示视频
+### 📺 演示视频
 B 站演示链接（替换为你的实际视频链接）
-###📄 开源协议
+### 📄 开源协议
 Apache License 2.0（详见根目录 LICENSE 文件）
 
-
-
-
-
-##　English Version
-###　Project Introduction
+---
+## English Version
+### Project Introduction
 A dual-device KVM switch based on ESP32-S3 and CH9350 modules, which enables seamless sharing of a single set of keyboard and mouse between two computers. Equipped with ESP32S3 on-board RGB-LED light effects to indicate the working status, no driver installation is required, and users without development experience can flash the precompiled firmware with one click. It supports dual-device power supply redundancy design to ensure stable system operation when a single device is powered on.
-###✨ Key Features
+### ✨Key Features
 
 - Dual-device switching: Supports fast switching of keyboard and mouse between 2 computers (shares one set of keyboard and mouse)
 - Two switching methods: Mouse middle button (can be disabled via the K2 button of the 3-position microswitch) or K1 button of the 3-position microswitch
@@ -156,7 +153,7 @@ A dual-device KVM switch based on ESP32-S3 and CH9350 modules, which enables sea
 - Driver-free compatibility: Supports all operating systems (Windows/Mac/Linux) that support the USB HID protocol
 - One-click flashing: Provides precompiled firmware, no need to build an ESP-IDF development environment
 
-🛠️ Hardware List
+### 🛠️ Hardware List
 | Hardware Name | Taobao Link | Quantity | Unit Price (CNY) | Total Amount (CNY) | Shipping Fee (CNY) | Grand Total (CNY) |
 |:-------------:|:-----------:|:--------:|:----------------:|:------------------:|:------------------:|:-----------------:|
 | ESP32 S3 Core Board (1-N16R8) | [https://item.taobao.com/item.htm?id=715306783664](https://item.taobao.com/item.htm?id=715306783664) | 1 | 24.1 | 24.1 | 0 | 24.1 |
@@ -167,7 +164,7 @@ A dual-device KVM switch based on ESP32-S3 and CH9350 modules, which enables sea
 | 304 Stainless Steel Pan Head Screw and Nut Set | [https://detail.tmall.com/item.htm?id=637072501037](https://detail.tmall.com/item.htm?id=637072501037) | 50(使用14个) | 4.7 | 4.7 | 0 | 4.7 |
 | 3D Printed Case | [https://www.jlc-3dp.cn/fp/Amntaau/1](https://www.jlc-3dp.cn/fp/Amntaau/1) | 1 | 24.78 | 24.78 | 3.2 | 27.98 |
 
-###🔌 Wiring & Assembly
+### 🔌 Wiring & Assembly
 
 1.Connect the keyboard and mouse to the corresponding USB ports of the CH9350 module respectively
 2.Connect the CH9350 module UART port (Host A) to ESP32-S3: TXD→U0RX (GPIO10), RXD→U0TX (GPIO11), GND→GND, 5V→1N5819→5V (ensure stable power supply)
@@ -211,7 +208,7 @@ A dual-device KVM switch based on ESP32-S3 and CH9350 modules, which enables sea
        GPIO13 (K2) <-------------- Microswitch (GND)
        GPIO14 (K3) <-------------- Microswitch (GND)
 
-###🚀 One-Click Flashing (No ESP-IDF Required)
+### 🚀 One-Click Flashing (No ESP-IDF Required)
 #### For Windows Users
 
 1. Download  [ Espressif ESP Flash Download Tool ](https://www.espressif.com/en/support/download/tools) (select the corresponding system version, it is recommended to download the latest version)
@@ -231,7 +228,7 @@ For detailed address description and parameter verification: firmware/precompile
 3. Mouse middle button function control: Press the "K2 button" to switch the on/off status of the mouse middle button switching function (it is recommended to use an LED indicator to distinguish the on/off status)
 4. LED control and reset: Short press the "K3 button" to manually control the LED on/off; long press the "K3 button" for more than 3 seconds to reset the device to the initial state
 
-###🎨 3D Case & CAD Files
+### 🎨 3D Case & CAD Files
 
  - 3D Models: 3d_models/ (including FreeCAD source files and STL printing files, which can be directly used for 3D printing)
  - 2D Drawings: cad_drawing/ (DWG + DXF formats, which can be used for processing or size modification)
@@ -248,7 +245,7 @@ idf.py set-target esp32s3
 idf.py build
 idf.py -p /dev/ttyUSB0 flash monitor
 
-❓ Frequently Asked Questions (FAQ)
+### ❓ Frequently Asked Questions (FAQ)
 Q1: Flashing failed / COM port not recognized
 A: Install the corresponding USB driver for ESP32-S3; replace with a high-quality USB cable (avoid data cables that only charge without transmitting data); replace the USB port of the computer; ensure the development board enters download mode (operate according to the corresponding key combination).
 Q2: No response after assembly, LED not on
@@ -259,7 +256,7 @@ Q4: Abnormal LED light effects (flicker, wrong color)
 A: Check whether the LED wiring is firm and the pins are corresponding correctly; confirm that the LED control logic in the firmware is consistent with the hardware wiring; try replacing the faulty LED.
 Q5: The system cannot work when a single computer is powered on
 A: Check if the diode wiring direction is correct (anode connected to host 5V, cathode connected to system bus); confirm that the diode model is 1N5819 (to ensure low forward conduction voltage); check if there is poor contact in the power supply line.
-📺 Demo Video
+### 📺 Demo Video
 Bilibili Demo Link (Replace with your actual video link)
-📄 Open Source License
+### 📄 Open Source License
 Apache License 2.0 (See the LICENSE file in the root directory for details)
