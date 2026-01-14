@@ -22,15 +22,15 @@
 - 一键烧录：提供预编译固件，无需搭建 ESP-IDF 开发环境
 
 ### 🛠️ 硬件清单
-| 硬件名称 | 淘宝链接 | 数量 | 单价(元) | 金额(元) | 快递费(元) | 合计(元) |
+| 硬件名称 | 购买链接 | 数量 | 单价(元) | 金额(元) | 快递费(元) | 合计(元) |
 |----------|----------|------|----------|----------|------------|----------|
-| ESP32 S3 核心板（1-N16R8） | [https://item.taobao.com/item.htm?id=715306783664](https://item.taobao.com/item.htm?id=715306783664) | 1 | 24.1 | 24.1 | 0 | 24.1 |
-| CH9350 模块 | [https://item.taobao.com/item.htm?id=695173316772](https://item.taobao.com/item.htm?id=695173316772) | 3 | 18.5 | 55.5 | 3 | 58.5 |
-| 三位微动开关（含 K1/K2/K3 按键） | [https://item.taobao.com/item.htm?id=550176517768](https://item.taobao.com/item.htm?id=550176517768) | 1 | 3.88 | 3.88 | 0 | 3.88 |
-| USB OTG 线 (公对公) | [https://item.taobao.com/item.htm?id=550176517768](https://item.taobao.com/item.htm?id=550176517768) | 6 | 0.85 | 5.1 | 2 | 7.1 |
-| 直插肖特基二极管DO-41(1N5819 1A 40V) | [https://detail.tmall.com/item.htm?id=781535844592](https://detail.tmall.com/item.htm?id=781535844592) | 20(使用2个) | 1.7 | 1.7 | 0 | 1.7 |
-| 304不锈钢十圆头螺丝螺母套装 | [https://detail.tmall.com/item.htm?id=637072501037](https://detail.tmall.com/item.htm?id=637072501037) | 50(使用14个) | 4.7 | 4.7 | 0 | 4.7 |
-| 3D打印外壳 | [https://www.jlc-3dp.cn/fp/Amntaau/1](https://www.jlc-3dp.cn/fp/Amntaau/1) | 1 | 24.78 | 24.78 | 3.2 | 27.98 |
+| ESP32 S3 核心板（1-N16R8） | [ESP32 S3 核心板链接](https://item.taobao.com/item.htm?id=715306783664) | 1 | 24.1 | 24.1 | 0 | 24.1 |
+| CH9350 模块 | [CH9350 模块链接](https://item.taobao.com/item.htm?id=695173316772) | 3 | 18.5 | 55.5 | 3 | 58.5 |
+| 三位微动开关（含 K1/K2/K3 按键） | [三位微动开关链接](https://item.taobao.com/item.htm?id=550176517768) | 1 | 3.88 | 3.88 | 0 | 3.88 |
+| USB OTG 线 (公对公) | [USB OTG 线链接](https://item.taobao.com/item.htm?id=550176517768) | 6 | 0.85 | 5.1 | 2 | 7.1 |
+| 直插肖特基二极管DO-41(1N5819 1A 40V) | [直插肖特基二极管链接](https://detail.tmall.com/item.htm?id=781535844592) | 20(使用2个) | 1.7 | 1.7 | 0 | 1.7 |
+| 304不锈钢十圆头螺丝螺母套装 | [圆头螺丝螺母套装链接](https://detail.tmall.com/item.htm?id=637072501037) | 50(使用14个) | 4.7 | 4.7 | 0 | 4.7 |
+| 3D打印外壳 | [3D打印链接](https://www.jlc-3dp.cn/fp/Amntaau/1) | 1 | 24.78 | 24.78 | 3.2 | 27.98 |
 
 ### 🔌 接线与组装
 1. 将键盘、鼠标分别连接至 CH9350 模块的对应 USB 接口
@@ -161,13 +161,13 @@ A dual-device KVM switch based on ESP32-S3 and CH9350 modules, which enables sea
 ### 🛠️ Hardware List
 | Hardware Name | Taobao Link | Quantity | Unit Price (CNY) | Total Amount (CNY) | Shipping Fee (CNY) | Grand Total (CNY) |
 |:-------------:|:-----------:|:--------:|:----------------:|:------------------:|:------------------:|:-----------------:|
-| ESP32 S3 Core Board (1-N16R8) | [https://item.taobao.com/item.htm?id=715306783664](https://item.taobao.com/item.htm?id=715306783664) | 1 | 24.1 | 24.1 | 0 | 24.1 |
-| CH9350 Module | [https://item.taobao.com/item.htm?id=695173316772](https://item.taobao.com/item.htm?id=695173316772) | 3 | 18.5 | 55.5 | 3 | 58.5 |
-| 3-position Microswitch (with K1/K2/K3 Buttons) | [https://item.taobao.com/item.htm?id=550176517768](https://item.taobao.com/item.htm?id=550176517768) | 1 | 3.88 | 3.88 | 0 | 3.88 |
-| USB OTG Cable (Male to Male) | [https://item.taobao.com/item.htm?id=550176517768](https://item.taobao.com/item.htm?id=550176517768) | 6 | 0.85 | 5.1 | 2 | 7.1 |
-| Through-hole Schottky Diode DO-41 (1N5819 1A 40V) | [https://detail.tmall.com/item.htm?id=781535844592](https://detail.tmall.com/item.htm?id=781535844592) | 20(use2) | 1.7 | 1.7 | 0 | 1.7 |
-| 304 Stainless Steel Pan Head Screw and Nut Set | [https://detail.tmall.com/item.htm?id=637072501037](https://detail.tmall.com/item.htm?id=637072501037) | 50(use14) | 4.7 | 4.7 | 0 | 4.7 |
-| 3D Printed Case | [https://www.jlc-3dp.cn/fp/Amntaau/1](https://www.jlc-3dp.cn/fp/Amntaau/1) | 1 | 24.78 | 24.78 | 3.2 | 27.98 |
+| ESP32 S3 Core Board (1-N16R8) | [ESP32 S3 Core Board Link](https://item.taobao.com/item.htm?id=715306783664) | 1 | 24.1 | 24.1 | 0 | 24.1 |
+| CH9350 Module | [CH9350 Module Link](https://item.taobao.com/item.htm?id=695173316772) | 3 | 18.5 | 55.5 | 3 | 58.5 |
+| 3-position Microswitch (with K1/K2/K3 Buttons) | [3-position Microswitch Link](https://item.taobao.com/item.htm?id=550176517768) | 1 | 3.88 | 3.88 | 0 | 3.88 |
+| USB OTG Cable (Male to Male) | [USB OTG Cable Link](https://item.taobao.com/item.htm?id=550176517768) | 6 | 0.85 | 5.1 | 2 | 7.1 |
+| Through-hole Schottky Diode DO-41 (1N5819 1A 40V) | [Through-hole Schottky Link](https://detail.tmall.com/item.htm?id=781535844592) | 20(use2) | 1.7 | 1.7 | 0 | 1.7 |
+| 304 Stainless Steel Pan Head Screw and Nut Set | [Head Screw and Nut Set Link](https://detail.tmall.com/item.htm?id=637072501037) | 50(use14) | 4.7 | 4.7 | 0 | 4.7 |
+| 3D Printed Case | [3D Printed Case Link](https://www.jlc-3dp.cn/fp/Amntaau/1) | 1 | 24.78 | 24.78 | 3.2 | 27.98 |
 
 ### 🔌 Wiring & Assembly
 
