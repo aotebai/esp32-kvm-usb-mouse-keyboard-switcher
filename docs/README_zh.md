@@ -24,13 +24,13 @@
 ### 🛠️ 硬件清单
 | 硬件名称 | 购买链接 | 数量 | 单价(元) | 金额(元) | 快递费(元) | 合计(元) |
 |----------|----------|------|----------|----------|------------|----------|
-| ESP32 S3 核心板（1-N16R8） | [ESP32 S3 核心板链接](https://item.taobao.com/item.htm?id=715306783664) | 1 | 24.1 | 24.1 | 0 | 24.1 |
-| CH9350 模块 | [CH9350 模块链接](https://item.taobao.com/item.htm?id=695173316772) | 3 | 18.5 | 55.5 | 3 | 58.5 |
-| 三位微动开关（含 K1/K2/K3 按键） | [三位微动开关链接](https://item.taobao.com/item.htm?id=550176517768) | 1 | 3.88 | 3.88 | 0 | 3.88 |
-| USB OTG 线 (公对公) | [USB OTG 线链接](https://item.taobao.com/item.htm?id=550176517768) | 6 | 0.85 | 5.1 | 2 | 7.1 |
-| 直插肖特基二极管DO-41(1N5819 1A 40V) | [直插肖特基二极管链接](https://detail.tmall.com/item.htm?id=781535844592) | 20(使用2个) | 1.7 | 1.7 | 0 | 1.7 |
-| 304不锈钢十圆头螺丝螺母套装 | [圆头螺丝螺母套装链接](https://detail.tmall.com/item.htm?id=637072501037) | 50(使用14个) | 4.7 | 4.7 | 0 | 4.7 |
-| 3D打印外壳 | [3D打印链接](https://www.jlc-3dp.cn/fp/Amntaau/1) | 1 | 24.78 | 24.78 | 3.2 | 27.98 |
+| ESP32 S3 核心板（1-N16R8） | [ESP32 S3 核心板](https://item.taobao.com/item.htm?id=715306783664) |     1 | 24.1 | 24.1 | 0 | 24.1 |
+| CH9350 模块 | [CH9350 模块](https://item.taobao.com/item.htm?id=695173316772) |     3 | 18.5 | 55.5 | 3 | 58.5 |
+| 三位微动开关（含 K1/K2/K3 按键） | [三位微动开关](https://item.taobao.com/item.htm?id=550176517768) |     1 | 3.88 | 3.88 | 0 | 3.88 |
+| USB OTG 线 (公对公) | [USB OTG 线](https://item.taobao.com/item.htm?id=550176517768) |     6 | 0.85 | 5.1 | 2 | 7.1 |
+| 直插肖特基二极管DO-41(1N5819 1A 40V) | [直插肖特基二极管](https://detail.tmall.com/item.htm?id=781535844592) | 20(使用2个) | 1.7 | 1.7 | 0 | 1.7 |
+| 304不锈钢十圆头螺丝螺母套装 | [圆头螺丝螺母套装](https://detail.tmall.com/item.htm?id=637072501037) | 50(使用14个) | 4.7 | 4.7 | 0 | 4.7 |
+| 3D打印外壳 | [3D打印](https://www.jlc-3dp.cn/fp/Amntaau/1) |     1 | 24.78 | 24.78 | 3.2 | 27.98 |
 
 ### 🔌 接线与组装
 1. 将键盘、鼠标分别连接至 CH9350 模块的对应 USB 接口
@@ -73,22 +73,27 @@
        U0TX (GPIO11) ------------> RXD
        U0RX (GPIO10) <------------ TXD
        
-       U2TX (GPIO43) ------------> RXD  [上位机 B]
+       [ESP32S3]                  [上位机 B]
+       U2TX (GPIO43) ------------> RXD  
        U2RX (GPIO44) <------------ TXD
        
-       U1TX (GPIO17) ------------> TXD  [下位机 C]
+       [ESP32S3]                   [下位机 C]  
+       U1TX (GPIO17) ------------> TXD 
        U1RX (GPIO18) <------------ RXD
        
-       GPIO12 (K1) <-------------- 微动开关 (GND)
-       GPIO13 (K2) <-------------- 微动开关 (GND)
-       GPIO14 (K3) <-------------- 微动开关 (GND)
+       
+       [ESP32S3]                   [微动开关]
+       GPIO12 -------------------->(K1) 
+       GPIO13 -------------------->(K2) 
+       GPIO14 -------------------->(K3) 
+       
 
 
 
 
 ### 🚀 一键烧录（无需 ESP-IDF）
 #### 适用于 Windows 用户
-1. 下载 [乐鑫 ESP Flash Download Tool](https://www.espressif.com/en/support/download/tools)（选择对应系统版本，建议下载最新版）
+1. 下载 [乐鑫 ESP Flash Download Tool](https://docs.espressif.com/projects/esp-test-tools/zh_CN/latest/esp32/production_stage/tools/flash_download_tool.html)（选择对应系统版本，建议下载最新版）
 2. 将 ESP32-S3 开发板通过 USB 线连接电脑，选择对应的 COM 口（未识别请安装 ESP32-S3 专用 USB 驱动）
 3. 设置烧录参数：`80MHz` / `DIO` / `2MB`（严格对应固件配置，避免烧录失败）
 4. 添加固件文件并对应烧录地址：

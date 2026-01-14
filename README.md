@@ -22,13 +22,13 @@ A dual-device KVM switch based on ESP32-S3 and CH9350 modules, which enables sea
 ### 🛠️ Hardware List
 | Hardware Name | Taobao Link | Quantity | Unit Price (CNY) | Total Amount (CNY) | Shipping Fee (CNY) | Grand Total (CNY) |
 |:-------------:|:-----------:|:--------:|:----------------:|:------------------:|:------------------:|:-----------------:|
-| ESP32 S3 Core Board (1-N16R8) | [ESP32 S3 Core Board Link](https://item.taobao.com/item.htm?id=715306783664) | 1 | 24.1 | 24.1 | 0 | 24.1 |
-| CH9350 Module | [CH9350 Module Link](https://item.taobao.com/item.htm?id=695173316772) | 3 | 18.5 | 55.5 | 3 | 58.5 |
-| 3-position Microswitch (with K1/K2/K3 Buttons) | [3-position Microswitch Link](https://item.taobao.com/item.htm?id=550176517768) | 1 | 3.88 | 3.88 | 0 | 3.88 |
-| USB OTG Cable (Male to Male) | [USB OTG Cable Link](https://item.taobao.com/item.htm?id=550176517768) | 6 | 0.85 | 5.1 | 2 | 7.1 |
+| ESP32 S3 Core Board (1-N16R8) | [ESP32 S3 Core Board Link](https://item.taobao.com/item.htm?id=715306783664) |     1 | 24.1 | 24.1 | 0 | 24.1 |
+| CH9350 Module | [CH9350 Module Link](https://item.taobao.com/item.htm?id=695173316772) |     3 | 18.5 | 55.5 | 3 | 58.5 |
+| 3-position Microswitch (with K1/K2/K3 Buttons) | [3-position Microswitch Link](https://item.taobao.com/item.htm?id=550176517768) |     1 | 3.88 | 3.88 | 0 | 3.88 |
+| USB OTG Cable (Male to Male) | [USB OTG Cable Link](https://item.taobao.com/item.htm?id=550176517768) |     6 | 0.85 | 5.1 | 2 | 7.1 |
 | Through-hole Schottky Diode DO-41 (1N5819 1A 40V) | [Through-hole Schottky Link](https://detail.tmall.com/item.htm?id=781535844592) | 20(use2) | 1.7 | 1.7 | 0 | 1.7 |
 | 304 Stainless Steel Pan Head Screw and Nut Set | [Head Screw and Nut Set Link](https://detail.tmall.com/item.htm?id=637072501037) | 50(use14) | 4.7 | 4.7 | 0 | 4.7 |
-| 3D Printed Case | [3D Printed Case Link](https://www.jlc-3dp.cn/fp/Amntaau/1) | 1 | 24.78 | 24.78 | 3.2 | 27.98 |
+| 3D Printed Case | [3D Printed Case Link](https://www.jlc-3dp.cn/fp/Amntaau/1) |     1 | 24.78 | 24.78 | 3.2 | 27.98 |
 
 ### 🔌 Wiring & Assembly
 
@@ -89,7 +89,7 @@ A dual-device KVM switch based on ESP32-S3 and CH9350 modules, which enables sea
 ### 🚀 One-Click Flashing (No ESP-IDF Required)
 #### For Windows Users
 
-1. Download  [ Espressif ESP Flash Download Tool ](https://www.espressif.com/en/support/download/tools) (select the corresponding system version, it is recommended to download the latest version)
+1. Download  [ Espressif ESP Flash Download Tool ](https://docs.espressif.com/projects/esp-test-tools/zh_CN/latest/esp32/production_stage/tools/flash_download_tool.html) (select the corresponding system version, it is recommended to download the latest version)
 2. Connect the ESP32-S3 development board to the computer via a USB cable, and select the corresponding COM port (install the dedicated ESP32-S3 USB driver if it is not recognized)
 3. Set the flashing parameters: 80MHz / DIO / 2MB (strictly correspond to the firmware configuration to avoid flashing failure)
 4. Add firmware files and corresponding flashing addresses:
