@@ -2,7 +2,7 @@
 
 ## 🌐 Language Switch
 - [🔤 English Version (Current)](./README.md)
-- [📝 中文版本](./README_zh.md)
+- [📝 中文版本](./docs/README_zh.md)
 
 ---
 ## english-version

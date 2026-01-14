@@ -1,7 +1,7 @@
 # ESP32-S3 KVM 切换器（双设备键鼠共享）
 
 ## 🌐 语言切换
-- [📝 中文版本 (当前)](./README_zh.md)
+- [📝 中文版本 (当前)](./docs/README_zh.md)
 - [🔤 English Version](./README.md)
 
 ---
