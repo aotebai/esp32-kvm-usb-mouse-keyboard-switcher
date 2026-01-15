@@ -158,4 +158,4 @@ A: Check if the diode wiring direction is correct (anode connected to host 5V, c
 ### 📺 Demo Video
 Bilibili Demo Link (Replace with your actual video link)
 ### 📄 Open Source License
-Apache License 2.0 (See the [LICENSE](/LICENSE) file in the root directory for details)
+Apache License 2.0 ,See the [LICENSE](/LICENSE) file in the root directory for details.

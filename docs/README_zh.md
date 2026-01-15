@@ -163,6 +163,6 @@ A：检查二极管接线方向是否正确（正极接上位机 5V，负极接�
 ### 📺 演示视频
 B 站演示链接（替换为你的实际视频链接）
 ### 📄 开源协议
-Apache License 2.0（详见根目录 LICENSE 文件）
+Apache License 2.0, 详见根目录 [LICENSE](../LICENSE) 文件。
 
 
