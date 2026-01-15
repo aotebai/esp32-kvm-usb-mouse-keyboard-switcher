@@ -123,7 +123,7 @@
 
 ![3D 外壳渲染图](screenshots/case_render.png)
 
-![3D 外壳渲染图](screenshots/case_render_1.png)
+![3D 外壳渲染图_1](screenshots/case_render_1.png)
 
 实物图：
 

@@ -119,7 +119,7 @@ For detailed address description and parameter verification: firmware/precompile
 
 ![3D Case Rendering](docs/screenshots/case_render.png)
 
-![3D Case Rendering](docs/screenshots/case_render_1.png)
+![3D Case Rendering_1](docs/screenshots/case_render_1.png)
 
 physical image:
 
