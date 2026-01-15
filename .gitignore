@@ -1,0 +1,64 @@
+# -------------------------- 1. ESP-IDF 编译产物（核心过滤）--------------------------
+# 编译目录
+build/
+cmake-build-*/
+# 编译生成的临时文件
+*.o
+*.a
+*.elf
+*.map
+*.bin.tmp
+*.hex
+# 配置缓存文件
+sdkconfig
+sdkconfig.old
+# 分区表临时文件
+partition_table/
+# 日志文件
+*.log
+
+# -------------------------- 2. 临时文件与压缩包（按需过滤）--------------------------
+# 系统临时文件
+*.tmp
+*.temp
+# 备份文件
+*.bak
+*.backup
+# 压缩包（注意：保留项目提供的 flash_download_tool.zip，排除其他无关压缩包）
+*.zip
+*.rar
+*.7z
+!firmware/tools/flash_download_tool.zip  # 「!」表示例外，该文件不被过滤，正常提交
+# 垃圾文件
+.DS_Store  # Mac 系统隐藏文件
+Thumbs.db  # Windows 系统缩略图文件
+
+# -------------------------- 3. IDE 与编辑器配置文件 --------------------------
+# VS Code
+.vscode/
+*.code-workspace
+# CLion / Qt Creator
+.idea/
+CMakeLists.txt.user
+# Vim 编辑器
+*.swp
+*.swo
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# -------------------------- 4. 环境与驱动文件（可选）--------------------------
+# Python 虚拟环境
+venv/
+env/
+*.pyc
+# USB 驱动安装包（非项目核心工具）
+*.exe
+*.msi
+!firmware/tools/  # 例外：保留 firmware/tools/ 目录下的可执行文件（若有）
+
+# -------------------------- 5. 项目自定义过滤（可按需添加）--------------------------
+# 例如：3D 模型编辑临时文件
+3d_models/*.tmp
+# 例如：CAD 图纸备份文件
+cad_drawing/*.bak
