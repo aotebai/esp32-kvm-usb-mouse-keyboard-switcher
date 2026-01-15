@@ -2,7 +2,7 @@
 ## 📋 Core Flash Burn Address List (Mandatory)
 |Firmware File Name | Corresponding Burn Address | Notes |
 |--------------|--------------|----------|
-|bootloader.bin	0x0 | Bootloader, essential for ESP32-S3 startup |
+|bootloader.bin | 0x0 | Bootloader, essential for ESP32-S3 startup |
 |partition-table.bin | 0x8000 | Partition table, defines storage ranges for firmware, data, and other partitions |
 |ch9350_led_switch.bin | |0x10000 | Project core firmware (implements KVM switch functionality) |
 |nvs_partition.bin (Optional) | 0x9000 | NVS (Non-Volatile Storage) partition, used to save device configuration parameters|
