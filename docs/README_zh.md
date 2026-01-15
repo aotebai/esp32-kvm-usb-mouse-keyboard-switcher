@@ -125,7 +125,7 @@
 
 实物图：
 
-![实物图](screenshots/3d_print.jpg)
+![实物图](screenshots/3D_physical.jpg)
 
 ### 🔨 从源码编译（开发者专用）
 1. 安装 ESP-IDF v5.5.1 版本（严格对应版本，避免兼容性问题）

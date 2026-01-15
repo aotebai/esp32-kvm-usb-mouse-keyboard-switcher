@@ -5,7 +5,7 @@
 - [📝 中文版本](./docs/README_zh.md)
 
 ---
-## 🔤 penglish-version
+## 🔤 english-version
 ### 🚩Project Introduction
 A dual-device KVM switch based on ESP32-S3 and CH9350 modules, which enables seamless sharing of a single set of keyboard and mouse between two computers. Equipped with ESP32-S3 on-board RGB-LED light effects to indicate the working status, no driver installation is required, and users without development experience can flash the precompiled firmware with one click. It supports dual-device power supply redundancy design to ensure stable system operation when a single device is powered on.
 ### ✨Key Features
@@ -121,7 +121,7 @@ For detailed address description and parameter verification: firmware/precompile
 
 physical image:
 
-![physical image](docs/screenshots/3d_print.jpg)
+![physical image](docs/screenshots/3D_physical.jpg)
 ### 🔨 Build from Source (For Developers)
 
 1. Install ESP-IDF v5.5.1 (strictly correspond to the version to avoid compatibility issues)
