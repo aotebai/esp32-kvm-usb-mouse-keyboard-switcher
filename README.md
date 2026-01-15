@@ -110,10 +110,10 @@ For detailed address description and parameter verification: firmware/precompile
 3. Mouse middle button function control: Press the "K2 button" to switch the on/off status of the mouse middle button switching function (it is recommended to use an LED indicator to distinguish the on/off status)
 4. LED control and reset: Short press the "K3 button" to manually control the LED on/off; long press the "K3 button" for more than 3 seconds to reset the device to the initial state
 
-### 🎨 3D Case & CAD Files
+### 🎨 3D Case & PDF Files
 
  - 3D Models: 3d_models/ (including FreeCAD source files and STL printing files, which can be directly used for 3D printing)
- - 2D Drawings: cad_drawing/ (DWG + DXF formats, which can be used for processing or size modification)
+ - 2D Drawings: PDF_drawing/ (PDF formats, which can be used for Wiring Diagrams)
 
 3D Case Rendering:
 
