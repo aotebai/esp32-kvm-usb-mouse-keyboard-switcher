@@ -123,6 +123,8 @@
 
 ![3D 外壳渲染图](screenshots/case_render.png)
 
+![3D 外壳渲染图](screenshots/case_render_1.png)
+
 实物图：
 
 ![实物图](screenshots/3D_physical.jpg)
