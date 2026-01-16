@@ -156,6 +156,6 @@ Q5: The system cannot work when a single computer is powered on
 A: Check if the diode wiring direction is correct (anode connected to host 5V, cathode connected to system bus); confirm that the diode model is 1N5819 (to ensure low forward conduction voltage); check if there is poor contact in the power supply line.
 
 ### 📺 Demo Video
-Bilibili Demo Link (Waiting)
+Bilibili Demo Link (Waiting...)
 ### 📄 Open Source License
 Apache License 2.0 ,See the [LICENSE](/LICENSE) file in the root directory for details.
